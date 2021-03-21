@@ -1,13 +1,3 @@
-type ConfiguredField = {
-  type: "button" | "checkbox" | "file" | "hidden" | "image" | "password" | "radio" | "reset" | "submit" | "text" | "number";
-  component: "input" | "textarea"
-}
-
-type FormGeneratorState = {
-  formTitle?: string | null;
-  items?: ConfiguredField[] | null;
-}
-
 interface Functionable<P extends any | null> {
   (props: P): void;
 }
@@ -22,6 +12,6 @@ type SetFormProps = {
 }
 
 type FormGeneratorContext = {
-  form: string | FormGeneratorState | null;
+  form?: Objectable | null;
   setFormState: Functionable<SetFormProps>;
 }
