@@ -74,3 +74,7 @@ declare module '*.module.sass' {
   const classes: { readonly [key: string]: string };
   export default classes;
 }
+
+declare module 'react-json-editor-ajrm/es';
+
+declare module 'react-json-editor-ajrm/es/locale/en';
