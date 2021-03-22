@@ -18,6 +18,12 @@ You will also see any lint errors in the console.
 
 ### `yarn build`
 
+After build:
+
+### `yarn global add serve`
+  
+### `serve -s build`
+
 ## Homework:
 
 Необходимо написать приложение (React) для генерации форм по заданной JOSN конфигурации.
