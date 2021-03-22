@@ -17,3 +17,31 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `yarn build`
+
+## Homework:
+
+Необходимо написать приложение (React) для генерации форм по заданной JOSN конфигурации.
+
+Приложение состоит из двух вкладок:
+
+Config – для ввода конфигурации формы в формате JSON;
+
+Result – для отображения формы.
+
+Приложение должно позволять генерировать формы с любым кол-вом полей. 
+Поля могут быть следующих типов:
+- Числовые (numberfield)
+- Строковые (textfield)
+- Многострочный текст (textarea)
+- Логический тип (checkbox)
+- Дата (dateflied)
+- Перечисление (radio buttons)
+
+В документации [react-jsonschema-form](https://react-jsonschema-form.readthedocs.io/en/latest/usage/objects/) можно посмотреть как конфигурировать нужные поля(TO-DO \#1).
+
+Так же приложение должно иметь возможность задавать заголовок формы, кол-во и текст кнопок(TO-DO \#2), например (Ok, Cancel, Apply)
+
+### TO-DO
+
+- \#1 Move from a part of documentation about the field's types to README.md
+- \#2 Add support of the buttons configuration

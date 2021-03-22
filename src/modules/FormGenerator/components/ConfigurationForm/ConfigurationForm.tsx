@@ -8,7 +8,7 @@ import formTheme from "./form-theme.json";
 
 import { FGConsumer } from "../../context";
 
-export default function ConfigurationForm() {
+export default function ConfigurationForm(): JSX.Element {
   return (
     <FGConsumer>
       { ({ form, setFormState}) => (
