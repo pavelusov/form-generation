@@ -1,5 +1,14 @@
+$gray: #8d8d8d;
+
 .form-wrapper {
   margin: 20px;
   padding: 20px;
-  border: 2px solid #c4c4c4;
+  border: 3px solid $gray;
+  display: inline-block;
+}
+
+.content {
+  width: 100%;
+  max-width: 500px;
+  border-top: 3px solid $gray;
 }

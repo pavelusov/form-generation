@@ -15,3 +15,9 @@ type FormGeneratorContext = {
   form?: Objectable | null;
   setFormState: Functionable<SetFormProps>;
 }
+
+type FormGeneratorTab = {
+  id: string;
+  title: string;
+  component: JSX.Element;
+}
