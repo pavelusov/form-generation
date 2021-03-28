@@ -21,3 +21,7 @@ type FormGeneratorTab = {
   title: string;
   component: JSX.Element;
 }
+
+type SubmitProps = {
+  formData: Objectable[];
+}
