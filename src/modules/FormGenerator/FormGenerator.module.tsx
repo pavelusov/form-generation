@@ -7,6 +7,11 @@ import { FGProvider } from "./context"
 import Tabs from "./components/Tabs/Tabs";
 import ConfigurationForm from "./components/ConfigurationForm";
 import configurationExample from "./components/ConfigurationForm/configuration-example.json";
+import FormButtons from "./components/FormButtons/FormButtons";
+
+function onSubmit({ formData }: SubmitProps): void {
+  alert(JSON.stringify(formData))
+}
 
 function FormGenerator() {
   const [form, setForm] = useState<Objectable>(configurationExample);
@@ -27,13 +32,23 @@ function FormGenerator() {
     {
       id: "tab_1",
       title: "Result",
-      component: <Form schema={form as JSONSchema7} />,
+      component: (
+        <Form
+          onSubmit={onSubmit}
+          schema={form as JSONSchema7}
+        >
+          <FormButtons
+            submitText="OK"
+            onCancel={() => alert("Press the chancel button")}
+          />
+        </Form>
+      ),
     }
   ];
   const defaultTab = tabContent[0];
   const [tabId, setTabId] = useState(defaultTab.id);
-
   const currentTab = tabContent.find(item => item.id === tabId);
+
   return (
     <FGProvider
       value={contextValue}
