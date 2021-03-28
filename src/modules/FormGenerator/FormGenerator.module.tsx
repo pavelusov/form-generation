@@ -7,7 +7,7 @@ import { FGProvider } from "./context"
 import Tabs from "./components/Tabs/Tabs";
 import ConfigurationForm from "./components/ConfigurationForm";
 import configurationExample from "./components/ConfigurationForm/configuration-example.json";
-import FormButtons from "./components/FormButtons/FormButtons";
+import FormButtons from "./components/FormButtons";
 
 function onSubmit({ formData }: SubmitProps): void {
   alert(JSON.stringify(formData))
